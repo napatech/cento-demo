@@ -165,4 +165,4 @@ Allow port 3000 (ntopng)
 	podman kube play --replace cento-demo-pod.yaml
 	```
 
-2. In a browser, go to `http://<host>:8080` to access the `ntopng` UI
+2. In a browser, go to `http://<host>:3000` to access the `ntopng` UI
