@@ -1,4 +1,4 @@
-# podman kube play --replace --publish 8080:3000 cento-demo-pod.yaml
+# podman kube play --replace cento-demo-pod.yaml
 #
 apiVersion: v1
 kind: Pod
