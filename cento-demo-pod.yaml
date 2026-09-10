@@ -5,6 +5,7 @@ kind: Pod
 metadata:
   name: cento-demo
 spec:
+  hostNetwork: true
   hostIPC: true
   restartPolicy: Never
 
