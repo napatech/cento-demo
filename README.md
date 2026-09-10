@@ -130,12 +130,12 @@ The following steps are **optional**. Without the licenses the setup will run fo
 
 - `pfring` license:
 	```
-	echo "<pfring license key>" > /opt/cento/licenses/pf_ring.license
+	echo "<pfring license key>" > /opt/ntop/licenses/pf_ring.license
 	```
 
 - `cento` license:
 	```
-	echo "<cento license key>" > /opt/cento/licenses/cento.license
+	echo "<cento license key>" > /opt/ntop/licenses/cento.license
 	```
 
 3. Update `cento-demo-pod.yaml` with `pf_ring` license S/N
