@@ -15,8 +15,6 @@ spec:
 
     - name: ntopng
       image: ntopng:latest
-      ports:
-        - containerPort: 3000
       volumeMounts:
         - mountPath: /opt/ntop/ntopng/config
           name: ntopng-config
