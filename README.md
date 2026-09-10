@@ -148,12 +148,21 @@ The following steps are **optional**. Without the licenses the setup will run fo
 
 	3.2. In the `cento-demo-pod.yaml`, replace 0's in the line `/etc/pf_ring/000-0000-00-00-0000-000000` with the S/N.
 
+## Update firewall rules
+
+Allow port 3000 (ntopng)
+
+	```
+    firewall-cmd --zone=FedoraServer --permanent --add-port=3000/tcp
+    firewall-cmd --reload
+	```
+
 ## Start the `cento-demo-pod`
 
 1. Start the pod
 
 	```
-	podman kube play --replace --publish 8080:3000 cento-demo-pod.yaml
+	podman kube play --replace cento-demo-pod.yaml
 	```
 
 2. In a browser, go to `http://<host>:8080` to access the `ntopng` UI
